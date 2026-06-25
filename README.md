@@ -105,6 +105,6 @@ design/
 
 ## 关于这个项目
 
-该平台由 **Tianjin** 独立设计并开发，交付给星纵智能（Streamax）作为内部 AI 能力共享基础设施。
+该平台由 **Tianjin** 独立设计并开发，交付给锐明技术（Streamax）作为内部 AI 能力共享基础设施。
 
 如有问题或建议，欢迎提 [Issue](https://github.com/tianjinZ001/Streamhub/issues)。
