@@ -16,11 +16,7 @@ export function SsoButton({ className, children }: { className?: string; childre
   async function handleLogin() {
     setLoading(true);
     const supabase = createClient();
-    const provider = (process.env.NEXT_PUBLIC_SSO_PROVIDER || "azure") as
-      | "azure"
-      | "google"
-      | "oidc"
-      | "okta";
+    const provider = (process.env.NEXT_PUBLIC_SSO_PROVIDER || "azure") as any;
     await supabase.auth.signInWithOAuth({
       provider,
       options: { redirectTo: `${window.location.origin}/auth/callback?next=/home` },
