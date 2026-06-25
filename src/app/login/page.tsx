@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SsoButton } from "@/components/SsoButton";
 import { Icon } from "@/components/Icons";
 import { getPublicStats } from "@/lib/queries";
@@ -32,7 +33,7 @@ export default async function LoginPage() {
           </p>
           <div className="lp-cta">
             <SsoButton className="lp-btn">使用企业账号登录</SsoButton>
-            <SsoButton className="lp-btn-ghost">浏览能力库</SsoButton>
+            <Link href="/browse" className="lp-btn-ghost">浏览能力库</Link>
           </div>
           <div className="lp-stats">
             <div className="lp-stat">
