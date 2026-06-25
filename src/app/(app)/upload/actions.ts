@@ -30,7 +30,7 @@ export async function createAsset(formData: FormData) {
       description,
       detail_md: detail_md || null,
       author_id: user.id,
-      status: "pending",
+      status: "published",
       version: "v1.0",
     })
     .select("id")
